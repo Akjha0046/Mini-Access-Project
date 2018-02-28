@@ -63,9 +63,9 @@ namespace MiniMicrosoftAccess2018.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dan_gold_290327_unsplash {
+        internal static System.Drawing.Bitmap dangold290327unsplash {
             get {
-                object obj = ResourceManager.GetObject("dan-gold-290327-unsplash", resourceCulture);
+                object obj = ResourceManager.GetObject("dangold290327unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,16 +76,6 @@ namespace MiniMicrosoftAccess2018.Properties {
         internal static System.Drawing.Bitmap database {
             get {
                 object obj = ResourceManager.GetObject("database", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap folder {
-            get {
-                object obj = ResourceManager.GetObject("folder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStructure));
             this.metroTileTable = new MetroFramework.Controls.MetroTile();
             this.metroTileFields = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
@@ -37,34 +38,40 @@
             this.metroTileTable.ActiveControl = null;
             this.metroTileTable.Location = new System.Drawing.Point(78, 106);
             this.metroTileTable.Name = "metroTileTable";
-            this.metroTileTable.Size = new System.Drawing.Size(273, 181);
+            this.metroTileTable.Size = new System.Drawing.Size(310, 266);
             this.metroTileTable.TabIndex = 0;
             this.metroTileTable.Text = "Tables";
+            this.metroTileTable.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTileTable.TileImage")));
+            this.metroTileTable.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTileTable.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTileTable.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTileTable.UseSelectable = true;
+            this.metroTileTable.UseTileImage = true;
             // 
             // metroTileFields
             // 
             this.metroTileFields.ActiveControl = null;
-            this.metroTileFields.Location = new System.Drawing.Point(357, 106);
+            this.metroTileFields.Location = new System.Drawing.Point(394, 106);
             this.metroTileFields.Name = "metroTileFields";
-            this.metroTileFields.Size = new System.Drawing.Size(273, 181);
+            this.metroTileFields.Size = new System.Drawing.Size(300, 266);
             this.metroTileFields.TabIndex = 1;
             this.metroTileFields.Text = "Fields";
+            this.metroTileFields.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTileFields.TileImage")));
+            this.metroTileFields.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTileFields.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTileFields.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTileFields.UseSelectable = true;
+            this.metroTileFields.UseTileImage = true;
             // 
             // frmStructure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 457);
+            this.ClientSize = new System.Drawing.Size(789, 475);
             this.Controls.Add(this.metroTileFields);
             this.Controls.Add(this.metroTileTable);
             this.Name = "frmStructure";
-            this.Text = "frmStructure";
+            this.Text = "Selection";
             this.ResumeLayout(false);
 
         }

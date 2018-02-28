@@ -120,9 +120,6 @@
     <None Include="Resources\database.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dan-gold-290327-unsplash.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <COMReference Include="DAO">
       <Guid>{00025E01-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>5</VersionMajor>
@@ -134,6 +131,8 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Table1.png" />
+    <None Include="Resources\dangold290327unsplash.jpg" />
     <Content Include="Resources\folder1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

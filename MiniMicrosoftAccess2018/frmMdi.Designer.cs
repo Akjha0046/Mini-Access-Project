@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MiniMicrosoftAccess2018.Properties.Resources.dan_gold_290327_unsplash;
+            this.BackgroundImage = global::MiniMicrosoftAccess2018.Properties.Resources.dangold290327unsplash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(300, 300);
             this.IsMdiContainer = true;
