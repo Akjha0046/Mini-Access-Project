@@ -72,6 +72,12 @@
     <Compile Include="frmMdi.Designer.cs">
       <DependentUpon>frmMdi.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStructure.Designer.cs">
+      <DependentUpon>frmStructure.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCredits.resx">
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMdi.resx">
       <DependentUpon>frmMdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStructure.resx">
+      <DependentUpon>frmStructure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,7 +135,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\folder1.png" />
-    <Content Include="Resources\karl-taylor-362375-unsplash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

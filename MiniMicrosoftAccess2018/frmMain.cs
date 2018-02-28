@@ -35,7 +35,6 @@ namespace MiniMicrosoftAccess2018
             DialogResult dialog = fbd.ShowDialog();
 
             metroLabelPath.Text = fbd.SelectedPath;
-
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
@@ -46,10 +45,26 @@ namespace MiniMicrosoftAccess2018
                 MetroFramework.MetroMessageBox.Show(this, "Enter the database name in textbox", "Important", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 return;
             }
+
             else if (metroLabelPath.Text == "")
             {
                 MetroFramework.MetroMessageBox.Show(this,"Specify a path for database","Important", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 return;
+            }
+
+            if (System.IO.File.Exists(metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb"))
+            {
+
+                if (MetroFramework.MetroMessageBox.Show(this,"A database with the same name already exist. Do you want to overwrite it?","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning,130) == DialogResult.Yes)
+                {
+                    System.IO.File.Delete(metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb");
+                }
+
+                else
+                {
+                    return;
+                }
+
             }
 
             DBEngine dbe = new DBEngine();

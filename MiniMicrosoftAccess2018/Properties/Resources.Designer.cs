@@ -63,16 +63,6 @@ namespace MiniMicrosoftAccess2018.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap clem_onojeghuo_223063_unsplash {
-            get {
-                object obj = ResourceManager.GetObject("clem-onojeghuo-223063-unsplash", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap dan_gold_290327_unsplash {
             get {
                 object obj = ResourceManager.GetObject("dan-gold-290327-unsplash", resourceCulture);
@@ -106,16 +96,6 @@ namespace MiniMicrosoftAccess2018.Properties {
         internal static System.Drawing.Bitmap folder1 {
             get {
                 object obj = ResourceManager.GetObject("folder1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap karl_taylor_362375_unsplash {
-            get {
-                object obj = ResourceManager.GetObject("karl-taylor-362375-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
