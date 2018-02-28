@@ -36,7 +36,7 @@
             // metroTileTable
             // 
             this.metroTileTable.ActiveControl = null;
-            this.metroTileTable.Location = new System.Drawing.Point(78, 106);
+            this.metroTileTable.Location = new System.Drawing.Point(132, 106);
             this.metroTileTable.Name = "metroTileTable";
             this.metroTileTable.Size = new System.Drawing.Size(310, 266);
             this.metroTileTable.TabIndex = 0;
@@ -51,7 +51,7 @@
             // metroTileFields
             // 
             this.metroTileFields.ActiveControl = null;
-            this.metroTileFields.Location = new System.Drawing.Point(394, 106);
+            this.metroTileFields.Location = new System.Drawing.Point(448, 106);
             this.metroTileFields.Name = "metroTileFields";
             this.metroTileFields.Size = new System.Drawing.Size(300, 266);
             this.metroTileFields.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 475);
+            this.ClientSize = new System.Drawing.Size(904, 538);
             this.Controls.Add(this.metroTileFields);
             this.Controls.Add(this.metroTileTable);
             this.Name = "frmStructure";

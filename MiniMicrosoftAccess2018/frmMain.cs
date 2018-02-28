@@ -71,6 +71,16 @@ namespace MiniMicrosoftAccess2018
 
             Database myDB = dbe.CreateDatabase(metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb",LanguageConstants.dbLangGeneral);
 
+            frmMdi mdi = new frmMdi();
+
+            frmStructure structure = new frmStructure();
+
+            this.Hide();
+
+           structure.MdiParent = mdi;
+
+            structure.Show();
+
 
         }
     }
