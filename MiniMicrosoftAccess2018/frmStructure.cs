@@ -16,5 +16,16 @@ namespace MiniMicrosoftAccess2018
         {
             InitializeComponent();
         }
+
+        private void metroTileTable_Click(object sender, EventArgs e)
+        {
+            frmTable table = new frmTable();
+
+            table.MdiParent = this.MdiParent;
+
+            this.Close();
+
+            table.Show();
+        }
     }
 }

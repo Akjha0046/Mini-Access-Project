@@ -28,45 +28,117 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
-            this.tabPageTb1 = new System.Windows.Forms.TabPage();
-            this.metroTabControl1.SuspendLayout();
+            this.metroButtonFinish = new MetroFramework.Controls.MetroButton();
+            this.metroTextBoxTableName = new MetroFramework.Controls.MetroTextBox();
+            this.metroTabControlTables = new MetroFramework.Controls.MetroTabControl();
+            this.metroLabelTableName = new MetroFramework.Controls.MetroLabel();
+            this.metroButtonAdd = new MetroFramework.Controls.MetroButton();
+            this.metroLabelInfo = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
-            // metroTabControl1
+            // metroButtonFinish
             // 
-            this.metroTabControl1.Controls.Add(this.tabPageTb1);
-            this.metroTabControl1.Location = new System.Drawing.Point(23, 50);
-            this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(721, 469);
-            this.metroTabControl1.TabIndex = 0;
-            this.metroTabControl1.UseSelectable = true;
+            this.metroButtonFinish.Location = new System.Drawing.Point(693, 292);
+            this.metroButtonFinish.Name = "metroButtonFinish";
+            this.metroButtonFinish.Size = new System.Drawing.Size(126, 38);
+            this.metroButtonFinish.TabIndex = 1;
+            this.metroButtonFinish.Text = "Finish";
+            this.metroButtonFinish.UseSelectable = true;
+            this.metroButtonFinish.Click += new System.EventHandler(this.metroButtonFinish_Click);
             // 
-            // tabPageTb1
+            // metroTextBoxTableName
             // 
-            this.tabPageTb1.Location = new System.Drawing.Point(4, 38);
-            this.tabPageTb1.Name = "tabPageTb1";
-            this.tabPageTb1.Size = new System.Drawing.Size(713, 427);
-            this.tabPageTb1.TabIndex = 0;
-            this.tabPageTb1.Text = "Table 1";
+            // 
+            // 
+            // 
+            this.metroTextBoxTableName.CustomButton.Image = null;
+            this.metroTextBoxTableName.CustomButton.Location = new System.Drawing.Point(140, 1);
+            this.metroTextBoxTableName.CustomButton.Name = "";
+            this.metroTextBoxTableName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBoxTableName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBoxTableName.CustomButton.TabIndex = 1;
+            this.metroTextBoxTableName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBoxTableName.CustomButton.UseSelectable = true;
+            this.metroTextBoxTableName.CustomButton.Visible = false;
+            this.metroTextBoxTableName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.metroTextBoxTableName.Lines = new string[0];
+            this.metroTextBoxTableName.Location = new System.Drawing.Point(84, 237);
+            this.metroTextBoxTableName.MaxLength = 32767;
+            this.metroTextBoxTableName.Name = "metroTextBoxTableName";
+            this.metroTextBoxTableName.PasswordChar = '\0';
+            this.metroTextBoxTableName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBoxTableName.SelectedText = "";
+            this.metroTextBoxTableName.SelectionLength = 0;
+            this.metroTextBoxTableName.SelectionStart = 0;
+            this.metroTextBoxTableName.ShortcutsEnabled = true;
+            this.metroTextBoxTableName.Size = new System.Drawing.Size(207, 35);
+            this.metroTextBoxTableName.TabIndex = 2;
+            this.metroTextBoxTableName.UseSelectable = true;
+            this.metroTextBoxTableName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBoxTableName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroTabControlTables
+            // 
+            this.metroTabControlTables.Location = new System.Drawing.Point(84, 95);
+            this.metroTabControlTables.Name = "metroTabControlTables";
+            this.metroTabControlTables.Size = new System.Drawing.Size(735, 70);
+            this.metroTabControlTables.TabIndex = 3;
+            this.metroTabControlTables.UseSelectable = true;
+            // 
+            // metroLabelTableName
+            // 
+            this.metroLabelTableName.AutoSize = true;
+            this.metroLabelTableName.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabelTableName.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabelTableName.Location = new System.Drawing.Point(84, 190);
+            this.metroLabelTableName.Name = "metroLabelTableName";
+            this.metroLabelTableName.Size = new System.Drawing.Size(101, 25);
+            this.metroLabelTableName.TabIndex = 4;
+            this.metroLabelTableName.Text = "Table name";
+            // 
+            // metroButtonAdd
+            // 
+            this.metroButtonAdd.Location = new System.Drawing.Point(693, 228);
+            this.metroButtonAdd.Name = "metroButtonAdd";
+            this.metroButtonAdd.Size = new System.Drawing.Size(126, 39);
+            this.metroButtonAdd.TabIndex = 5;
+            this.metroButtonAdd.Text = "Add new table";
+            this.metroButtonAdd.UseSelectable = true;
+            this.metroButtonAdd.Click += new System.EventHandler(this.metroButtonAdd_Click);
+            // 
+            // metroLabelInfo
+            // 
+            this.metroLabelInfo.Location = new System.Drawing.Point(184, 473);
+            this.metroLabelInfo.Name = "metroLabelInfo";
+            this.metroLabelInfo.Size = new System.Drawing.Size(513, 51);
+            this.metroLabelInfo.TabIndex = 6;
             // 
             // frmTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 542);
-            this.Controls.Add(this.metroTabControl1);
+            this.ClientSize = new System.Drawing.Size(842, 598);
+            this.Controls.Add(this.metroLabelInfo);
+            this.Controls.Add(this.metroButtonAdd);
+            this.Controls.Add(this.metroLabelTableName);
+            this.Controls.Add(this.metroTabControlTables);
+            this.Controls.Add(this.metroTextBoxTableName);
+            this.Controls.Add(this.metroButtonFinish);
             this.Name = "frmTable";
             this.Text = "Table Creation";
-            this.metroTabControl1.ResumeLayout(false);
+            this.TransparencyKey = System.Drawing.Color.DodgerBlue;
+            this.Load += new System.EventHandler(this.frmTable_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroTabControl metroTabControl1;
-        private System.Windows.Forms.TabPage tabPageTb1;
+        private MetroFramework.Controls.MetroButton metroButtonFinish;
+        private MetroFramework.Controls.MetroTextBox metroTextBoxTableName;
+        private MetroFramework.Controls.MetroTabControl metroTabControlTables;
+        private MetroFramework.Controls.MetroLabel metroLabelTableName;
+        private MetroFramework.Controls.MetroButton metroButtonAdd;
+        private MetroFramework.Controls.MetroLabel metroLabelInfo;
     }
 }

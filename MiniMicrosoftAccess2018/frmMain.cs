@@ -59,7 +59,7 @@ namespace MiniMicrosoftAccess2018
             if (System.IO.File.Exists(metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb"))
             {
 
-                if (MetroFramework.MetroMessageBox.Show(this,"A database with the same name already exist. Do you want to overwrite it?","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning,130) == DialogResult.Yes)
+                if (MetroFramework.MetroMessageBox.Show(this,"A database with the same name already exist in this path. Do you want to overwrite it?","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning,130) == DialogResult.Yes)
                 {
                     System.IO.File.Delete(metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb");
                 }
@@ -71,19 +71,22 @@ namespace MiniMicrosoftAccess2018
 
             }
 
-            DBEngine dbe = new DBEngine();
+             Variable.dbe = new DBEngine();
 
-            Database myDB = dbe.CreateDatabase(metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb",LanguageConstants.dbLangGeneral);
+            Variable.myDB = Variable.dbe.CreateDatabase(metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb",LanguageConstants.dbLangGeneral);
+
+            Variable.path = metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb";
 
             frmStructure structure = new frmStructure();
 
             this.Close();
 
-           structure.MdiParent = this.ParentForm;
+            structure.MdiParent = this.MdiParent;
 
             structure.Show();
 
-
+            //Variable.myDB.Close();
+            
         }
 
         private void frmMain_Load(object sender, EventArgs e)
