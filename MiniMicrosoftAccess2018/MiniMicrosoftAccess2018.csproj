@@ -131,7 +131,6 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Table1.png" />
     <None Include="Resources\dangold290327unsplash.jpg" />
     <Content Include="Resources\folder1.png" />
   </ItemGroup>

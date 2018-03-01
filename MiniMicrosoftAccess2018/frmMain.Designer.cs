@@ -38,9 +38,10 @@
             // 
             // metroButtonAbout
             // 
-            this.metroButtonAbout.Location = new System.Drawing.Point(525, 34);
+            this.metroButtonAbout.Location = new System.Drawing.Point(788, 52);
+            this.metroButtonAbout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.metroButtonAbout.Name = "metroButtonAbout";
-            this.metroButtonAbout.Size = new System.Drawing.Size(97, 31);
+            this.metroButtonAbout.Size = new System.Drawing.Size(146, 48);
             this.metroButtonAbout.TabIndex = 1;
             this.metroButtonAbout.Text = "Credits";
             this.metroButtonAbout.UseSelectable = true;
@@ -52,16 +53,18 @@
             // 
             // 
             this.metroTextBoxDatabaseName.CustomButton.Image = null;
-            this.metroTextBoxDatabaseName.CustomButton.Location = new System.Drawing.Point(135, 1);
+            this.metroTextBoxDatabaseName.CustomButton.Location = new System.Drawing.Point(303, 2);
+            this.metroTextBoxDatabaseName.CustomButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.metroTextBoxDatabaseName.CustomButton.Name = "";
-            this.metroTextBoxDatabaseName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBoxDatabaseName.CustomButton.Size = new System.Drawing.Size(50, 51);
             this.metroTextBoxDatabaseName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBoxDatabaseName.CustomButton.TabIndex = 1;
             this.metroTextBoxDatabaseName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBoxDatabaseName.CustomButton.UseSelectable = true;
             this.metroTextBoxDatabaseName.CustomButton.Visible = false;
             this.metroTextBoxDatabaseName.Lines = new string[0];
-            this.metroTextBoxDatabaseName.Location = new System.Drawing.Point(184, 109);
+            this.metroTextBoxDatabaseName.Location = new System.Drawing.Point(276, 168);
+            this.metroTextBoxDatabaseName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.metroTextBoxDatabaseName.MaxLength = 32767;
             this.metroTextBoxDatabaseName.Name = "metroTextBoxDatabaseName";
             this.metroTextBoxDatabaseName.PasswordChar = '\0';
@@ -70,7 +73,7 @@
             this.metroTextBoxDatabaseName.SelectionLength = 0;
             this.metroTextBoxDatabaseName.SelectionStart = 0;
             this.metroTextBoxDatabaseName.ShortcutsEnabled = true;
-            this.metroTextBoxDatabaseName.Size = new System.Drawing.Size(157, 23);
+            this.metroTextBoxDatabaseName.Size = new System.Drawing.Size(236, 35);
             this.metroTextBoxDatabaseName.TabIndex = 2;
             this.metroTextBoxDatabaseName.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBoxDatabaseName.UseSelectable = true;
@@ -80,7 +83,8 @@
             // metroLabelDatabaseName
             // 
             this.metroLabelDatabaseName.AutoSize = true;
-            this.metroLabelDatabaseName.Location = new System.Drawing.Point(184, 87);
+            this.metroLabelDatabaseName.Location = new System.Drawing.Point(276, 134);
+            this.metroLabelDatabaseName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabelDatabaseName.Name = "metroLabelDatabaseName";
             this.metroLabelDatabaseName.Size = new System.Drawing.Size(103, 19);
             this.metroLabelDatabaseName.TabIndex = 4;
@@ -92,9 +96,10 @@
             this.metroButtonPath.BackColor = System.Drawing.Color.Gainsboro;
             this.metroButtonPath.BackgroundImage = global::MiniMicrosoftAccess2018.Properties.Resources.folder1;
             this.metroButtonPath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButtonPath.Location = new System.Drawing.Point(356, 99);
+            this.metroButtonPath.Location = new System.Drawing.Point(534, 152);
+            this.metroButtonPath.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.metroButtonPath.Name = "metroButtonPath";
-            this.metroButtonPath.Size = new System.Drawing.Size(62, 44);
+            this.metroButtonPath.Size = new System.Drawing.Size(93, 68);
             this.metroButtonPath.TabIndex = 3;
             this.metroButtonPath.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroButtonPath.UseSelectable = true;
@@ -103,9 +108,10 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(465, 201);
+            this.metroTile1.Location = new System.Drawing.Point(698, 309);
+            this.metroTile1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(124, 119);
+            this.metroTile1.Size = new System.Drawing.Size(186, 183);
             this.metroTile1.TabIndex = 0;
             this.metroTile1.Text = "Create Database";
             this.metroTile1.TileImage = global::MiniMicrosoftAccess2018.Properties.Resources.database;
@@ -116,25 +122,29 @@
             // 
             // metroLabelPath
             // 
-            this.metroLabelPath.Location = new System.Drawing.Point(184, 159);
+            this.metroLabelPath.Location = new System.Drawing.Point(276, 245);
+            this.metroLabelPath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabelPath.Name = "metroLabelPath";
-            this.metroLabelPath.Size = new System.Drawing.Size(271, 27);
+            this.metroLabelPath.Size = new System.Drawing.Size(406, 42);
             this.metroLabelPath.TabIndex = 5;
             this.metroLabelPath.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 343);
+            this.ClientSize = new System.Drawing.Size(951, 528);
             this.Controls.Add(this.metroLabelPath);
             this.Controls.Add(this.metroLabelDatabaseName);
             this.Controls.Add(this.metroButtonPath);
             this.Controls.Add(this.metroTextBoxDatabaseName);
             this.Controls.Add(this.metroButtonAbout);
             this.Controls.Add(this.metroTile1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMain";
+            this.Padding = new System.Windows.Forms.Padding(30, 92, 30, 31);
             this.Text = "Mini Microsoft Access";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

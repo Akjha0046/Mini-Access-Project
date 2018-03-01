@@ -13,6 +13,7 @@ namespace MiniMicrosoftAccess2018
 {
     public partial class frmMain : MetroFramework.Forms.MetroForm
     {
+        
         public frmMain()
         {
             InitializeComponent();
@@ -20,9 +21,12 @@ namespace MiniMicrosoftAccess2018
 
         private void metroButtonAbout_Click(object sender, EventArgs e)
         {
+            
             frmCredits crd = new frmCredits();
 
-            this.Hide();
+            crd.MdiParent = this.ParentForm;
+
+            this.Close();
 
             crd.Show();
 
@@ -71,16 +75,19 @@ namespace MiniMicrosoftAccess2018
 
             Database myDB = dbe.CreateDatabase(metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb",LanguageConstants.dbLangGeneral);
 
-            frmMdi mdi = new frmMdi();
-
             frmStructure structure = new frmStructure();
 
-            this.Hide();
+            this.Close();
 
-           structure.MdiParent = mdi;
+           structure.MdiParent = this.ParentForm;
 
             structure.Show();
 
+
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
 
         }
     }
