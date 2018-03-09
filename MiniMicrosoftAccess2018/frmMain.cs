@@ -84,9 +84,6 @@ namespace MiniMicrosoftAccess2018
             structure.MdiParent = this.MdiParent;
 
             structure.Show();
-
-            //Variable.myDB.Close();
-            
         }
 
         private void frmMain_Load(object sender, EventArgs e)

@@ -47,6 +47,7 @@
             this.metroTileFields.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTileFields.UseSelectable = true;
             this.metroTileFields.UseTileImage = true;
+            this.metroTileFields.Click += new System.EventHandler(this.metroTileFields_Click);
             // 
             // metroTileTable
             // 

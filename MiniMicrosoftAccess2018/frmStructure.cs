@@ -27,5 +27,16 @@ namespace MiniMicrosoftAccess2018
 
             table.Show();
         }
+
+        private void metroTileFields_Click(object sender, EventArgs e)
+        {
+            frmField fl = new frmField();
+
+            this.Close();
+
+            fl.MdiParent = this.ParentForm;
+
+            fl.Show();
+        }
     }
 }

@@ -9,10 +9,10 @@ namespace MiniMicrosoftAccess2018
 {
     class Variable
     {
-        public static frmMdi mdi;
         public static DBEngine dbe;
         public static Database myDB;
+        public static TableDef myTB;
         public static string path;
-
+        public static List<string> storeTableNames = new List<string>();
     }
 }

@@ -52,9 +52,9 @@
             // 
             // 
             this.metroTextBoxTableName.CustomButton.Image = null;
-            this.metroTextBoxTableName.CustomButton.Location = new System.Drawing.Point(140, 1);
+            this.metroTextBoxTableName.CustomButton.Location = new System.Drawing.Point(173, 1);
             this.metroTextBoxTableName.CustomButton.Name = "";
-            this.metroTextBoxTableName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBoxTableName.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.metroTextBoxTableName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBoxTableName.CustomButton.TabIndex = 1;
             this.metroTextBoxTableName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -108,7 +108,7 @@
             // 
             // metroLabelInfo
             // 
-            this.metroLabelInfo.Location = new System.Drawing.Point(184, 473);
+            this.metroLabelInfo.Location = new System.Drawing.Point(230, 472);
             this.metroLabelInfo.Name = "metroLabelInfo";
             this.metroLabelInfo.Size = new System.Drawing.Size(513, 51);
             this.metroLabelInfo.TabIndex = 6;

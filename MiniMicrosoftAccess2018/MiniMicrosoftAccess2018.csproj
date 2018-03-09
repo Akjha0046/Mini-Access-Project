@@ -60,6 +60,12 @@
     <Compile Include="frmCredits.Designer.cs">
       <DependentUpon>frmCredits.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmField.Designer.cs">
+      <DependentUpon>frmField.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="Variable.cs" />
     <EmbeddedResource Include="frmCredits.resx">
       <DependentUpon>frmCredits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmField.resx">
+      <DependentUpon>frmField.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

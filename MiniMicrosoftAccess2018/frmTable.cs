@@ -18,6 +18,10 @@ namespace MiniMicrosoftAccess2018
             InitializeComponent();
         }
 
+       // private List<string> tableNames = new List<string>();
+
+       
+
         private void metroPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -35,6 +39,7 @@ namespace MiniMicrosoftAccess2018
             }
 
             string title = metroTextBoxTableName.Text;
+
             string tabPageName = "tabPage" + metroTabControlTables.TabPages.Count;
 
             metroTabControlTables.TabPages.Add(title,tableName);
@@ -50,18 +55,22 @@ namespace MiniMicrosoftAccess2018
 
         private void metroButtonFinish_Click(object sender, EventArgs e)
         {
+
             for (int i = 0; i < metroTabControlTables.TabCount; i++)
             {
-                // Variable.dbe.OpenDatabase(Variable.path);
+                //Variable.myTB = Variable.myDB.CreateTableDef(metroTabControlTables.TabPages[i].Name);
 
-                TableDef myTD = Variable.myDB.CreateTableDef(metroTabControlTables.TabPages[i].Name);
+                Variable.storeTableNames.Add(metroTabControlTables.TabPages[i].Text);
 
-                 Field myFl = myTD.CreateField("Pizza", DataTypeEnum.dbText, 25);
-
-                myTD.Fields.Append(myFl);
-
-                Variable.myDB.TableDefs.Append(myTD);
             }
+           
+            Variable.myTB = Variable.myDB.CreateTableDef(Variable.storeTableNames[0]);
+
+            frmStructure structure = new frmStructure();
+
+            this.Close();
+
+            structure.Show();
         }
 
         private void frmTable_Load(object sender, EventArgs e)
