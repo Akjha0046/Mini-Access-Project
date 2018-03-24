@@ -77,18 +77,23 @@ namespace MiniMicrosoftAccess2018
 
             Variable.path = metroLabelPath.Text + "\\" + metroTextBoxDatabaseName.Text + ".accdb";
 
-            frmStructure structure = new frmStructure();
+            frmCreation fc = new frmCreation();
 
             this.Close();
 
-            structure.MdiParent = this.MdiParent;
+            fc.MdiParent = this.MdiParent;
 
-            structure.Show();
+            fc.Show();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroButtonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

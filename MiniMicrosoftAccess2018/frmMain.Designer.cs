@@ -34,10 +34,12 @@
             this.metroButtonPath = new MetroFramework.Controls.MetroButton();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroLabelPath = new MetroFramework.Controls.MetroLabel();
+            this.metroButtonExit = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroButtonAbout
             // 
+            this.metroButtonAbout.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButtonAbout.Location = new System.Drawing.Point(788, 52);
             this.metroButtonAbout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.metroButtonAbout.Name = "metroButtonAbout";
@@ -53,10 +55,10 @@
             // 
             // 
             this.metroTextBoxDatabaseName.CustomButton.Image = null;
-            this.metroTextBoxDatabaseName.CustomButton.Location = new System.Drawing.Point(303, 2);
+            this.metroTextBoxDatabaseName.CustomButton.Location = new System.Drawing.Point(202, 1);
             this.metroTextBoxDatabaseName.CustomButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.metroTextBoxDatabaseName.CustomButton.Name = "";
-            this.metroTextBoxDatabaseName.CustomButton.Size = new System.Drawing.Size(50, 51);
+            this.metroTextBoxDatabaseName.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.metroTextBoxDatabaseName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBoxDatabaseName.CustomButton.TabIndex = 1;
             this.metroTextBoxDatabaseName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -129,11 +131,24 @@
             this.metroLabelPath.TabIndex = 5;
             this.metroLabelPath.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
+            // metroButtonExit
+            // 
+            this.metroButtonExit.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButtonExit.Location = new System.Drawing.Point(788, 110);
+            this.metroButtonExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.metroButtonExit.Name = "metroButtonExit";
+            this.metroButtonExit.Size = new System.Drawing.Size(146, 48);
+            this.metroButtonExit.TabIndex = 6;
+            this.metroButtonExit.Text = "Exit";
+            this.metroButtonExit.UseSelectable = true;
+            this.metroButtonExit.Click += new System.EventHandler(this.metroButtonExit_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(951, 528);
+            this.Controls.Add(this.metroButtonExit);
             this.Controls.Add(this.metroLabelPath);
             this.Controls.Add(this.metroLabelDatabaseName);
             this.Controls.Add(this.metroButtonPath);
@@ -158,5 +173,6 @@
         private MetroFramework.Controls.MetroButton metroButtonPath;
         private MetroFramework.Controls.MetroLabel metroLabelDatabaseName;
         private MetroFramework.Controls.MetroLabel metroLabelPath;
+        private MetroFramework.Controls.MetroButton metroButtonExit;
     }
 }

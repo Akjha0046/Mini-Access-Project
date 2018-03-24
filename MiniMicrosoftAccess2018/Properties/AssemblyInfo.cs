@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MiniMicrosoftAccess2018")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("An Application that create a Microsoft Access Database.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("MiniMicrosoftAccess2018")]
